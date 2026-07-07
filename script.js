@@ -1,4 +1,4 @@
-function chunkString(str, size) {
+function stringChop(str, size) {
     if (str.length <= size) {
         return [str];
     }
