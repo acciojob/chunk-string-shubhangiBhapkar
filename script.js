@@ -1,5 +1,5 @@
-function stringChop(str, size) {
-  // if (str.length <= size) {
+function chunkString(str, size) {
+    if (str.length <= size) {
         return [str];
     }
 
@@ -16,9 +16,7 @@ function stringChop(str, size) {
     }
 
     return arr;
-	
 }
-
 // Do not change the code below
  const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
