@@ -1,18 +1,14 @@
 function stringChop(str, size) {
   // your code here
-	if(str.length <= size){
-		return str.split("");
-	}
-	for (let i = 0; i < str.length; i += size) {
-    let world = "";
+	function stringChop(str, size) {
+    let arr = [];
 
-    for (let j = i; j < i + size && j < str.length; j++) {
-        world += str[j];
+    for (let i = 0; i < str.length; i += size) {
+        arr.push(str.substring(i, i + Number(size)));
     }
 
-    arr[cnt] = world;
-    cnt++;
-} 
+    return arr;
+}
 	
 }
 
